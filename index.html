@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="navbar">
+        <img src="mrdad.png" width="150px" height="150px" alt="">
+        <h1>Mr Dad Marine World</h1>
+        <div class="menu-icon" onclick="togglemenu()">☰</div>
+        <div class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">About</a>
+            <a href="#">My Account</a>
+        </div>
+     </div>
+
+     <div class="hero">
+
+     </div>
+
+     <div>
+        <div class="Product">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/A._percula.jpg" width="200px" height="250px" alt="">
+                <h2>Clownfish</h2>
+                <p>$1500</p>
+                <button type="clik">add to cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoE_Ux__zkpw1eMU6RSa9er4BSImE23i2q75oi_m5-hJ7ZXnS66iDHnNzc027pg4I1vxU&usqp=CAU" width="200px" height="250px" alt="">
+                <h2>Lionfish</h2>
+                <p>$1000</p>
+                <button type="clik">add to cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Zebrasoma_flavescens_Luc_Viatour.jpg/1280px-Zebrasoma_flavescens_Luc_Viatour.jpg" width="200px" height="250px" alt="">
+                <h2>Yellow tang</h2>
+                <p>$2000</p>
+                <button type="clik">add to cart</button>
+            </div>
+
+
+        </div>
+     </div>
+
+<script>
+    function togglemenu(){
+        document.getElementById("menu").classList.toggle("show")
+    }
+</script>
+
+</body>
+</html>

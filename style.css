@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+ 
+    background-color: rgb(107, 110, 110);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px 25px;
+}
+.navbar h1{
+    color: rgb(220, 223, 84);
+    font-weight: 800;
+    font-size: 45px;
+    margin-left:px;
+}
+.navbar a{
+    color: rgb(132, 252, 152);
+    text-decoration: none;
+    padding-left: 35px;
+    font-weight: 800;
+    font-size: 25px;
+}
+.menu{
+    display: flex;
+}
+.menu-icon{
+    display: none;
+    color: rgb(25, 25, 26);
+    cursor: pointer;
+    font-size: 25px;
+}
+.menu.show{
+    display: flex;
+}
+.hero{
+    background-image: url(https://sarkaripariksha.com/daily-news-images/1684145279-news.jpeg);
+    width: 100%;
+    height:50vh;
+    background-size: cover;
+    background-position:center;
+    
+}
+.Product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.card{
+    display: inline-block;
+    padding: 20px 25px;
+    border: 3px solid black;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    height: 400px;
+    width: 300px;
+}
+button{
+    background-color: #00ff15;
+    border: none;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+}
+button:hover{
+        background-color: #006834;
+        color: white;
+      
+}
+                   /* mobile viwe */ 
+                   
+@media only screen and (min-width: 320px) and (max-width:425px) {
+    body{
+        background-color: rgba(166, 187, 243, 0.63);
+    }
+    .navbar{
+ 
+        background-color: rgb(144, 211, 211);
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 10px 15px;
+    }
+    .navbar img{
+        width:50px;
+        height:50px ;
+    }
+    .navbar h1{
+        color: rgb(93, 84, 223);
+        font-weight: 800;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .navbar a{
+        color: rgb(51, 5, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        padding-left: 35px;
+        font-weight: 800;
+        font-size: 25px;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color:rgba(144, 211, 211, 0.493);
+        width: 300px;
+        height: 350px;
+        padding-top: 35px;
+        position: absolute;
+        top:70px;
+        left: 0;
+    }
+    .menu-icon{
+        display: block;
+
+    }
+    .menu a{
+        padding-top: 25px;
+    }
+    .Product{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 25px;
+        
+    }
+    .card{
+        padding: 5px 10px;
+        border: 3px solid black;
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        height: 250px;
+        width: 200px;
+    }
+    .Product .card img{
+        width:100px ;
+        height: 150px;
+    }
+    button{
+        background-color: #00ff15;
+        border: none;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        padding: 5px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 2px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    
+    }
+    button:hover{
+            background-color: #006834;
+            color: white;
+          
+    }
+}
+                    /* tab viwe */
+
+@media only screen and (min-width: 426px) and (max-width:768px){
+    body{
+        background-color: rgba(174, 231, 248, 0.63);
+    }
+    .navbar{
+ 
+        background-color: rgb(33, 51, 51);
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 10px 15px;
+    }
+    .navbar h1{
+        color: rgb(84, 223, 193);
+        font-weight: 800;
+        font-size: 30px;
+        margin-left: 25px;
+    }
+    .navbar a{
+        color: rgb(146, 12, 199);
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        padding-left: 35px;
+        font-weight: 800;
+        font-size: 25px;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color:rgba(237, 243, 157, 0.493);
+        width: 300px;
+        height: 350px;
+        padding-top: 35px;
+        position: absolute;
+        top: 170px;
+        left: 0;
+    }
+    .menu-icon{
+        display: block;
+
+    }
+    .menu a{
+        padding-top: 25px;
+    }
+    .Product{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 25px;
+        
+    }
+    .card{
+        padding: 5px 10px;
+        border: 3px solid black;
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        height: 250px;
+        width: 200px;
+    }
+    .Product .card img{
+        width:100px ;
+        height: 150px;
+    }
+    button{
+        background-color: #00ff15;
+        border: none;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        padding: 5px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 2px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    
+    }
+    button:hover{
+            background-color: #006834;
+            color: white;
+          
+    }
+}
+                /* laptop viwe */
+@media only screen and (min-width: 1023px) and (max-width:1117px){
+    body{
+        background-color: rgba(115, 204, 231, 0.63);
+    }
+    .navbar{
+ 
+        background-color: rgb(107, 110, 110);
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 15px 25px;
+    }
+    .navbar h1{
+        color: rgb(220, 223, 84);
+        font-weight: 800;
+        font-size: 40px;
+        margin-left:0px;
+    }
+    .navbar a{
+        color: rgb(132, 252, 152);
+        text-decoration: none;
+        padding-left: 20px;
+        font-weight: 700;
+        font-size: 25px;
+    }  
+}
